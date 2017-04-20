@@ -1,0 +1,9 @@
+<form action="<%= users_url(@user) %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="user_name">Username</label>
+  <input type="text" id="user_name" name="user[user_name]">
+  <label for="password">Password</label>
+  <input type="password" id="password" name="user[password]">
+
+  <input type="submit" value="Sign up">
+</form>
